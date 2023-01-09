@@ -16,6 +16,14 @@ module.exports = {
   plugins: [
     'react',
   ],
+  settings: {
+    'import/resolver': {
+      node: {
+        paths: ['src'],
+        extensions: ['.jsx', '.ts', '.d.ts', '.tsx'],
+      },
+    },
+  },
   rules: {
     'react/no-unescaped-entities': 0,
     'eslintreact/no-danger': 0,
