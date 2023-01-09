@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-black text-base h-screen;
+  font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr min(1440px, 94%) 1fr;
+  grid-template-rows: 96px auto 72px;
+}
+
+.wrapper > * {
+  grid-column: 2;
+}
+
+.wrapper > .fluid {
+  grid-column: 1 / -1;
+}
