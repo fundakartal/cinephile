@@ -1,4 +1,6 @@
+import { HomeContainer } from 'containers';
+
 const HomePage = () => (
-  <div>HomePage</div>
+  <HomeContainer />
 );
 export default HomePage;
